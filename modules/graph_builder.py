@@ -9,7 +9,8 @@ def nodes_to_G(graph, G):
         title = 'Смежные вершины:'
         if graph[node]:
             for edge in graph[node]:
-                title += f'\n{edge[1]}'
+                if f'\n{edge[1]}' not in title:
+                    title += f'\n{edge[1]}'
         else:
             title += '\nотсутствуют'
 

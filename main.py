@@ -8,7 +8,7 @@ GRAPH_PATH = os.path.join(os.getcwd(), 'graph.html')
 
 def parse_input():
     codes = input('Введите коды через пробел: ').split()
-    while len(codes) < 1:
+    while len(codes) < 1 or len(set(codes)) < len(codes):
         print('Неверные входные данные!')
         codes = input('Введите коды через пробел: ').split()
 

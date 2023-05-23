@@ -8,7 +8,7 @@ pip install -r "requirements.txt"
 
 Также весь проект можно собрать в единый исполняемый файл с помощью команды:
 ```properties
-pyinstaller --noconfirm --onefile --console --collect-all "pyvis" "main.py" --distpath "./"  --specpath "./build"
+pyinstaller --noconfirm --onefile --console --collect-all "pyvis" "main.py" --distpath "./" --specpath "./build"
 ```
 После выполнения этой команды появятся:
 - директория **./build**, которую можно удалить вместе с содержимым

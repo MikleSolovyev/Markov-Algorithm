@@ -8,12 +8,12 @@ GRAPH_PREFIX_NAME = 'graph'
 
 
 def parse_input():
-    codes_path = input(r'Введите путь до файла с кодами (пустой ввод - .\codes.txt): ')
+    codes_path = input(r'Введите путь до файла с кодами (пустой ввод - ./codes.txt): ')
     if not codes_path:
         codes_path = CODES_PATH
     while not os.path.exists(codes_path):
         print('Нету файла по такому пути!')
-        codes_path = input(r'Введите путь до файла с кодами (пустой ввод - .\codes.txt): ')
+        codes_path = input(r'Введите путь до файла с кодами (пустой ввод - ./codes.txt): ')
         if not codes_path:
             codes_path = CODES_PATH
 
